@@ -19,7 +19,8 @@ int main (int argc, char **argv)
 	mqd_t qd_server, qd_client; 
 	long token_number = 1; 
 	// next token to be given to client 
-	printf ("Server: Hello, World!\n"); 
+	int z = maximus(5, 8);
+	printf ("Server: Hello, World!, SHALOM : %d\n", z); 
 	struct mq_attr attr; attr.mq_flags = 0; 
 	attr.mq_maxmsg = MAX_MESSAGES; 
 	attr.mq_msgsize = MAX_MSG_SIZE; 
@@ -52,7 +53,4 @@ int main (int argc, char **argv)
 			continue;
 		}
 	}
-	int z = maximus(5, 8);
-	return z;
-
-}	
+}
