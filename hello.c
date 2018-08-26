@@ -6,6 +6,8 @@
 #include <fcntl.h> 
 #include <sys/stat.h> 
 #include <mqueue.h> 
+#include "hellohfile.h"
+
 #define SERVER_QUEUE_NAME "/sp-example-server" 
 #define QUEUE_PERMISSIONS 0660 
 #define MAX_MESSAGES 10 
@@ -50,4 +52,7 @@ int main (int argc, char **argv)
 			continue;
 		}
 	}
+	int z = maximus(5, 8);
+	return z;
+
 }	
